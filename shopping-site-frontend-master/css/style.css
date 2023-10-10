@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --Soft-Green: #AEBC41;
+    --Soft-Orange: hsl(39, 71%, 50%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --box-shadow: .5rem .5rem  0 #6d7a08;
+    --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
+    --border: .2rem  solid var(--green);
+}
+::selection{
+    background-color: var(--Soft-Orange);
+    color: #fff;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: ; */
+    background: #1c0522;
+}
+header
+{
+    /* position: absolute; */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* margin-left: -10em; */
+    /* width: 112%; */
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(72, 90, 73, 0.1);
+    position: fixed;
+    height: 130px;
+    right: 0%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: -7em;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+    text-decoration: none;
+}
+.header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+.header .navbar a:hover{
+    color: var(--Soft-Orange);
+}
+.header .navbar .btn{
+    padding: .6rem 3rem;
+    background-color: var(--Soft-Orange);
+    color: #fff;
+    border-radius: .5rem;
+}
+.header .navbar .btn:hover{
+    color: var(--Soft-Orange);
+    background-color: transparent;
+    border: 2px solid var(--Soft-Orange);
+}
+#menu-btn{
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: var(--Soft-Green);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }   
+}
+@media (max-width: 768px){
+    #menu-btn{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        box-shadow: var(--box-shadow);
+        width: 33rem;
+        border-radius: .5rem;
+        border: 2px solid var(--Soft-Green);
+        background-color: #fff;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+    .header .navbar.active{
+        transform: scale(1);
+    }
+    .header .navbar a{
+        margin: 2.5rem;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 70%;
+    }
+}
+#menu-btn{
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: var(--Soft-Green);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }   
+}
+@media (max-width: 768px){
+    #menu-btn{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        box-shadow: var(--box-shadow);
+        width: 33rem;
+        border-radius: .5rem;
+        border: 2px solid var(--Soft-Green);
+        background-color: #fff;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+    .header .navbar.active{
+        transform: scale(1);
+    }
+    .header .navbar a{
+        margin: 2.5rem;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 70%;
+    }
+}
+/* ------------------------------------------------------Header----------------------------------------------------*/
+/* #bd-title{
+    font-size:25px;
+    font-family: 'Lobster', cursive;
+}
+@media all and (min-width:900px){
+    .mrl{
+        margin-left:200px;
+    }
+    .reg2{
+        position:absolute;
+        right:50px;
+    }
+    .reg1{
+        position:absolute;
+        right:200px;
+    }
+} */
+/*------------------------------------------------------Header---------------------------------------------------- */
+
+/* .card2sty {
+    padding: 2px;
+    margin: 5px;
+} */
+
+/*------------------------------------------------------Nav----------------------------------------------------*/
+/* @media all and (min-width:991px){
+    .nav2{
+        background-color:#1c0522;
+        height:30px;
+        overflow: hidden;
+    }
+    .nav2 > ul >li{
+        display:inline-block;
+        margin-left:50px;
+    }
+    .nav2 > ul >li > a:hover{
+        text-decoration: none;
+        list-style: none;
+    }
+    nav > ul >li >a{
+        font-size:15px;
+        font-weight:bold;
+        color:black;
+    }
+    #one{
+        margin-left:200px;
+    
+    }
+}
+@media all and (max-width:1280px){
+    .nav2{
+        display:none;
+    }
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #1c0522;
+}
+.carousel1 {
+    top: 10rem;
+}
+section::before
+{
+    content: '';
+    position: absolute; */
+    /* bottom: 120px; */
+    /* width: 100%;
+    height: 10vh;
+    background: linear-gradient(to top, #1c0522, #000000, transparent);
+    z-index: 1000;
+} */
+/*------------------------------------------------------Nav----------------------------------------------------*/
+
+/*------------------------------------------------------Cards----------------------------------------------------*/
+.card-icon{
+    height:30px;
+    width:30px;
+    background-color:#1d0a3b00;
+    border-radius:50%;
+}
+/*------------------------------------------------------Cards----------------------------------------------------*/
+
+/*------------------------------------------------------Banner----------------------------------------------------*/
+
+.banner-link{
+    text-decoration: none;
+    list-style:none;
+}
+/*------------------------------------------------------Banner----------------------------------------------------*/
+
+/*------------------------------------------------------Card2---------------------------------------------------->*/
+.cd-h4{
+    font-weight:bold; 
+    margin:5px; 
+    padding-top:5px;
+    padding-left:20px; 
+    padding-bottom:20px;
+    background-color:#100422;
+    color: #ffffff;
+    max-width:330px;
+    max-height:40px;
+    border-radius:30px;
+}
+
+.txt-sz{
+    position: relative;
+}
+.bb-btn{
+    position: absolute;
+    bottom:10px;
+    color: #1c0522;
+}
+@media all and (max-width:576px){
+    .card2sty{
+        background-color:#150331;
+        height:350px;
+    }
+}
+@media all and (min-width:577px){
+    .card2sty{
+        background-color:#150331;
+        height:450px;
+    }
+}
+
+.card2sty:hover{
+    background-color:#411c7e;
+}
+/*------------------------------------------------------Card2----------------------------------------------------*/
+
+
+
+@media all and (max-width:577px){
+    .mm{
+        margin-top:10px;
+    }
+}
+
+/*------------------------------------------------Footer------------------------------------------------- */
+.footdes{
+    position: relative;
+    bottom:0;
+    width:100%;
+    height:350px;
+      
+}
+.footer-1{
+    height:300px;
+}
+.footer-2{
+    height:75px;
+    border-top:1px solid white;
+}
+.footer-2-div{
+    margin-left:100px; margin-top:10px;
+}
+.footer-2-div > a{
+    margin-left:20px;
+}
+.footer-2-div > a >i{
+    font-size: 30px;
+}
+.foocol{
+    min-height:300px;
+    background-color: #172337; 
+}
+@media all and (min-width:576px){
+    .foocol{
+        border-right: 2px dotted white;
+    }
+}
+@media all and (max-width:575px){
+    .foocol{
+        border-bottom: 2px dotted white;
+    }
+    .foocol:last-child{
+        border-bottom: none;
+    }
+}
+.foocol-2{
+    background-color: #172337; 
+}
+.foocol:last-child{
+    border-right: none;
+}
+.fh4{
+    margin-top:10px;
+    text-transform: uppercase;
+    background: none;
+}
+.fas{
+    background: none;
+}
+/*------------------------------------------------Footer------------------------------------------------- */
+
+/* .slideanim {
+    visibility:hidden;
+    visibility:visible\9;For old IE browsers IE6-8 */
+/* }
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after { */
+    /* useful when its child elements are float:left; */
+    /* content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+} */
+/* 
+#slide {
+    position: absolute;
+    left: -600px;
+    width: 600px;
+    height: 370px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+} */

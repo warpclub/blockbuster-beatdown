@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page - A Tribute To KK - Soustin Roy</title>
+    <link rel="stylesheet" href="./style-login.css">
+    <link rel="stylesheet" href="./style-login2.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #ffffff;
+      } */
+      button {
+        background-color: hsl(39, 71%, 50%);
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        font-weight: 850;
+        padding: 15px;
+        margin: 10px 0px;
+        border: 2px solid #6d7a08;
+        cursor: pointer;
+      }
+      form {
+        border: 3px solid #f1f1f1;
+        box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+      }
+      button:hover {
+        background-color: transparent;
+        color: hsl(39, 71%, 50%);
+        border: 2px solid #6d7a08;
+      }
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+      }
+
+      .container {
+        padding: 25px;
+        background-color: #ffffff;
+        display: flexbox;
+      }
+      .options {
+        display: -ms-inline-flexbox;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title{
+        padding-top: 8rem;
+        /* display: flex; */
+        align-items: center;
+        flex-wrap: wrap;
+        /* main property for responsiveness */
+        gap: 1.5rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div>
+            <a href="#" class="logo"><img src="../logo.png" style="scale: 0.2;"></a>
+        </div>
+        <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../Movie_Tickets-main/booking.html">Book Tickets</a></li>
+            <li><a href="../shopping-site-frontend-master/merchandise.html">Merchandise</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./login.html" class="active" target="_blank">Log in</a></li>
+        </ul>
+        </nav>
+        
+        <div class="fas fa-bars" id="menu-btn" cursorhover="true"></div>
+
+    </header>
+
+    <section class="title" id="title">
+      <br>
+      <br>
+    <div class="heading">
+      <center><h1>Login Form</h1></center>
+      <br>
+    </div>
+    <form>
+      <div class="container">
+        <label>Username : </label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+        <label>Password : </label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <!-- <a href="./loginthank.html"> -->
+            <button type="submit" onclick="goThank()">Login</button>
+        <!-- </a> -->
+        <div class="options">
+          <input type="checkbox" checked="checked" /> Remember me
+          <button type="button" class="cancelbtn" onclick="goIndex()">
+            Cancel
+          </button>
+          <a href="#"> Forgot password? </a>
+        </div>
+        <script>
+          function goIndex() {
+            window.location.href = "index.html";
+          }
+          function goThank() {  
+            window.location.href = "loginthank.html";
+          }
+        //   document.getElementById("submitBtn").addEventListener("click", goThank);  
+            // function goThank() {  
+            //    window.location.href="loginthank.html";  
+            // }
+        </script>
+        <!-- <div style="text-align: center">
+          <h1>Thank you!</h1>
+          <p>Your submission has been received.</p>
+          <p>This page will redirect in <span id="timer"></span>s.</p>
+        </div> -->
+        <!-- <script type="text/javascript">
+          var count = 5; // The delay in seconds before redirecting.
+          var redirect = "https://www.jotform.com"; // The redirection's landing page.
+          function countDown() {
+            if (count >= 0) {
+              document.getElementById("timer").innerHTML = count--;
+              setTimeout("countDown()", 1000);
+            } else {
+              window.location.href = redirect;
+            }
+          }
+          countDown();
+        </script> -->
+      <!-- </div> -->
+    </form>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer sec" id="footer sec">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="./index.html"><i class="fas fa-chevron-right"></i>home</a>
+                <a href="./summary.html"><i class="fas fa-chevron-right"></i>life summary</a>
+                <a href="./topsongs.html"><i class="fas fa-chevron-right"></i>top songs</a>
+                <a href="#footer"><i class="fas fa-chevron-right"></i>contact</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-789</a>
+                <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+                <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai, india - 12345</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer sec1" id="footer sec1">
+
+        <div class="credit">created by
+            <span>Blockbuster Beatdown</span> | all rights reserved</a>
+        </div>
+
+    </section>
+
+ <!-- footer section ends -->
+
+
+ <script src="js/main.js"></script>
+  </body>
+</html>

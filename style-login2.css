@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    transition: 0.2s ease-in-out;
+    color: #ffffff;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+/* *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+} */
+:root{
+    --Soft-Green: #AEBC41;
+    --Soft-Orange: hsl(39, 71%, 50%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --box-shadow: .5rem .5rem  0 #6d7a08;
+    --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
+    --border: .2rem  solid var(--green);
+}
+::selection{
+    background-color: #1c0522;
+    color: #fff;
+}
+body
+{
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+    /* overflow-y: ; */
+    background: #1c0522;
+}
+
+form::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 102%;
+    height: 7vh;
+    left: -2px;
+    background: linear-gradient(to top, #1c0522, #ffffff, transparent);
+    z-index: 1000;
+}
+
+form::after
+{
+    content: '';
+    position: absolute;
+    top: 36vh;
+    width: 102%;
+    height: 7vh;
+    left: -2px;
+    background: linear-gradient(to bottom, #1c0522, #ffffff, transparent);
+    z-index: 1000;
+}
+
+/* footer section starts */
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:white;
+    /* border-color: var(--text-shadow);
+    border: 20px; */
+    /* box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .25); */
+    /* box-shadow: .2em var(--text-shadow); */
+    /* text-shadow: ; */
+}
+
+.footer .box-container .box h3{
+    color: white;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:1rem;
+}
+
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    border-top: .1rem solid #0000001a;
+}
+
+
+.footer .credit span{
+    color: white;
+    cursor: pointer;
+}
+
+
+/* footer section ends */
+
+/* footer section ends */
+
+/* .slideanim {
+    visibility:hidden;
+    visibility:visible\9;For old IE browsers IE6-8 */
+/* }
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after { */
+    /* useful when its child elements are float:left; */
+    /* content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+} */
+/* 
+#slide {
+    position: absolute;
+    left: -600px;
+    width: 600px;
+    height: 370px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+} */

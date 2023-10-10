@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ye Vs Bhaijan</title>
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="float-panel.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="javascript" type="javascript/rel" href="index.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="#" class="logo"><img src="../logo.png" style="scale: 0.2;"></a>
+            </div>
+            <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="../Movie_Tickets-main/booking.html">Book Tickets</a></li>
+                <li><a href="../shopping-site-frontend-master/merchandise.html">Merchandise</a></li>
+                <li><a href="#foot">Contact</a></li>
+                <li><a href="./login.html" class="btn" target="_blank">Log in</a></li>
+            </ul>
+            </nav>
+            
+            <div class="fas fa-bars" id="menu-btn" cursorhover="true"></div>
+
+        </header>
+
+        <section id="parallax">
+            <img src="../SMOKE BG.png" id="smoke">
+            <h2 id="text">The Ferocious Feud: Ye Vs Bhaijan</h2>
+            <h2 id="tagline">From Movies to Music Who Will Steal The Spotlight?</h2>
+            <a href="#sec" id="btn">Explore</a> 
+            <img src="../SalmanKenya.png" id="salmankenya">
+        </section>
+        
+        <div class="sec" id="sec">
+            <center>
+                <h2 id="text">The Ferocious Feud: Ye Vs Bhaijan</h2>
+                <h2 id="tagline">From Movies to Music Who Will Steal The Spotlight?</h2>
+                <h2>Know More</h2>
+                <h3 class="quotes qt1">„</h3>
+                <h3 class="quotes">The Fight of <b>The Anti Hero</b> And <b>The Fearless</b></h3>
+                <h3 class="quotes qt2">“</h3>
+                <p class="content">Watch  the biggest Artists of this age come to blows in the Ultimate Boxing Match between Kanye West and Salman Khan in TokyoDome on 12 th december ‘23</p>
+            </center>
+        </div>
+        
+
+    <!-- footer section starts  -->
+    <div class="foot" id="foot">
+
+        <section class="footer sec" id="footer sec">
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="./index.html"><i class="fas fa-chevron-right"></i>home</a>
+                    <a href="./summary.html"><i class="fas fa-chevron-right"></i>life summary</a>
+                    <a href="./topsongs.html"><i class="fas fa-chevron-right"></i>top songs</a>
+                    <a href="#footer"><i class="fas fa-chevron-right"></i>contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"><i class="fas fa-phone"></i>+123-456-789</a>
+                    <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+                    <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+                    <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai, india - 12345</a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i>facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                    <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                    <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="footer sec1" id="footer sec1">
+
+            <div class="credit">created by
+                <span>Blockbuster Beatdown</span> | all rights reserved</a>
+            </div>
+
+        </section>
+
+    </div>
+
+ <!-- footer section ends -->
+
+
+        
+        <script>
+            let smoke = document.getElementById('smoke');
+            let text = document.getElementById('text');
+            let tagline = document.getElementById('tagline');
+            let btn = document.getElementById('btn');
+            let salmankenya = document.getElementById('salmankenya');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                smoke.style.top= value*0.25+'px';
+                salmankenya.style.bottom= value*5.5+'px';
+                text.style.marginRight = value*15+'px';
+                tagline.style.marginRight = value*15+'px';
+                // text.style.bottom = value*3.5+'px';
+                btn.style.bottom = value*3.5+'px';
+            })
+        </script>
+    </body>
+</html>
